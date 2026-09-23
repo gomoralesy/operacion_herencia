@@ -1,8 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Dispositivo dispositivoUno = new Dispositivo("celular", true);
 
-        dispositivoUno.mostrarEstado();
-        dispositivoUno.ejecutarDiagnostico();
+        Proyector proyectorUno = new Proyector("Proyector Sala 101", true);
+        Computador computadorUno = new Computador("Computador Sala 105", true);
+        Impresora impresoraUno = new Impresora("Impresora Sala 120", true);
+
+        proyectorUno.mostrarEstado();
+        computadorUno.mostrarEstado();
+        impresoraUno.mostrarEstado();
     }
 }
