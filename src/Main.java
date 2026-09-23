@@ -5,6 +5,10 @@ public class Main {
         Computador computadorUno = new Computador("Computador Sala 105", true);
         Impresora impresoraUno = new Impresora("Impresora Sala 120", true);
 
+        proyectorUno.ejecutarDiagnostico();
+        computadorUno.ejecutarDiagnostico();
+        impresoraUno.ejecutarDiagnostico();
+
         proyectorUno.mostrarEstado();
         computadorUno.mostrarEstado();
         impresoraUno.mostrarEstado();
