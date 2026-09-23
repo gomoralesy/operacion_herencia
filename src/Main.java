@@ -12,5 +12,19 @@ public class Main {
         proyectorUno.mostrarEstado();
         computadorUno.mostrarEstado();
         impresoraUno.mostrarEstado();
+
+        System.out.println("============================");
+
+        Dispositivo dispositivoUno = new Proyector("Proyector Sala 201", true);
+        Dispositivo dispositivoDos = new Computador("Computador Sala 205", true);
+        Dispositivo dispositivoTres = new Impresora("Impresora Sala 220", true);
+
+        dispositivoUno.ejecutarDiagnostico();
+        dispositivoDos.ejecutarDiagnostico();
+        dispositivoTres.ejecutarDiagnostico();
+
+        dispositivoUno.mostrarEstado();
+        dispositivoDos.mostrarEstado();
+        dispositivoTres.mostrarEstado();
     }
 }
